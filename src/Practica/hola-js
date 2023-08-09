@@ -25,7 +25,7 @@ function CookiesExample() {
   return (
     <div>
       {token ? (
-        <button onClick={handleLogout}>Logout</button>
+        <button onClick={handleLogout}>Logout hola este cambio es nuevo</button>
       ) : (
         <button onClick={handleLogin}>Login</button>
       )}
