@@ -65,7 +65,7 @@ function RegistrationForm ()  {
   return (
     <form onSubmit={handleSubmit}>
       <div>
-        <label>Nombredfsfsdf:</label>
+        <label>Nombre y Apellido:</label>
         <input type="text" name="name" value={formData.name} onChange={handleInputChange} />
         {errors.name && <span>{errors.name}</span>} {/* Mostrar mensaje de error si existe */}
       </div>
