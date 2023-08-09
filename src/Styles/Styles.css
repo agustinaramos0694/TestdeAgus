@@ -1,0 +1,30 @@
+.app {
+    padding: 16px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header.css */
+  .header-light {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 12px;
+  }
+  
+  .header-dark {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+  }
+  
+  /* Content.css */
+  .content-light {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 12px;
+  }
+  
+  .content-dark {
+    background-color: #444;
+    color: #fff;
+    padding: 12px;
+  }
