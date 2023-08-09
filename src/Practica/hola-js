@@ -1,0 +1,37 @@
+import React, { useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
+
+function CookiesExample() {
+  const [token, setToken] = useState('');
+
+  useEffect(() => {
+    const storedToken = Cookies.get('token');
+    if (storedToken) {
+      setToken(storedToken);
+    }
+  }, []);
+
+  const handleLogin = () => {
+    const newToken = 'myAuthToken';
+    setToken(newToken);
+    Cookies.set('token', newToken, { expires: 7 }); // Cookie válida por 7 días
+  };
+
+  const handleLogout = () => {
+    setToken('');
+    Cookies.remove('token');
+  };
+
+  return (
+    <div>
+      {token ? (
+        <button onClick={handleLogout}>Logout</button>
+      ) : (
+        <button onClick={handleLogin}>Login</button>
+      )}
+      <p>Token: {token}</p>
+    </div>
+  );
+}
+
+export default CookiesExample;
